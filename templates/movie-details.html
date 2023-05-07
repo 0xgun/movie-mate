@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Guy 2021</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../static/css/Style.css">
+  <script src="https://jsuites.net/v4/jsuites.js"></script>
+  <script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+  <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .be-comment-block {
+      margin-bottom: 50px !important;
+      border: 1px solid #edeff2;
+      border-radius: 2px;
+      padding: 50px 70px;
+      border: 1px solid #ffffff;
+    }
+
+    .comments-title {
+      font-size: 16px;
+      color: #f7f6f6;
+      margin-bottom: 15px;
+      font-family: 'Conv_helveticaneuecyr-bold';
+    }
+
+    .be-img-comment {
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-bottom: 15px;
+    }
+
+    .be-ava-comment {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .be-comment-content {
+      margin-left: 80px;
+    }
+
+    .be-comment-content span {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 15px;
+    }
+
+    .be-comment-name {
+      font-size: 13px;
+      font-family: 'Conv_helveticaneuecyr-bold';
+    }
+
+    .be-comment-content a {
+      color: #ebeff8;
+    }
+
+    .be-comment-content span {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 15px;
+    }
+
+    .be-comment-time {
+      text-align: right;
+    }
+
+    .be-comment-time {
+      font-size: 11px;
+      color: #b4b7c1;
+    }
+
+    .be-comment-text {
+      font-size: 13px;
+      line-height: 18px;
+      color: #7a8192;
+      display: block;
+      background: #f6f6f7;
+      border: 1px solid #edeff2;
+      padding: 15px 20px 20px 20px;
+    }
+
+    .form-group.fl_icon .icon {
+      position: absolute;
+      top: 1px;
+      left: 16px;
+      width: 48px;
+      height: 48px;
+      background: #f6f6f7;
+      color: #b5b8c2;
+      text-align: center;
+      line-height: 50px;
+      -webkit-border-top-left-radius: 2px;
+      -webkit-border-bottom-left-radius: 2px;
+      -moz-border-radius-topleft: 2px;
+      -moz-border-radius-bottomleft: 2px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    .form-group .form-input {
+      font-size: 13px;
+      line-height: 50px;
+      font-weight: 400;
+      color: #b4b7c1;
+      width: 100%;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #edeff2;
+      border-radius: 3px;
+    }
+
+    .form-group.fl_icon .form-input {
+      padding-left: 70px;
+    }
+
+
+    .form-group textarea.form-input {
+      height: 150px;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body id="#top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo">
+        <img src="../static/images/logo.svg" alt="Filmlane logo">
+      </a>
+
+      <div class="header-actions">
+
+
+
+        <a class="btn btn-primary" href="/logout">Logout</a>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="../static/images/logo.svg" alt="Filmlane logo">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/main" class="navbar-link">Home</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #MOVIE DETAIL
+      -->
+
+      <section class="movie-detail">
+
+
+        <div class="container">
+
+          <figure class="movie-detail-banner">
+
+            <img src="{{result[3]}}" alt="Free guy movie poster">
+
+            <button class="play-btn" target="_blank" onclick="openVideo()">
+              <ion-icon name="play-circle-outline"></ion-icon>
+            </button>
+
+          </figure>
+
+
+
+          <div class="movie-detail-content">
+
+            <p class="detail-subtitle"> MOVIES RATINGS: {{result[5]}}</p>
+
+            <h1 class="h1 detail-title">
+              <strong>{{result[1]}}</strong>
+            </h1>
+
+            <div class="meta-wrapper">
+
+
+              <div class="ganre-wrapper">
+                <a href="#">Comedy,</a>
+
+                <a href="#">Action,</a>
+
+                <a href="#">Adventure,</a>
+
+                <a href="#">Science Fiction</a>
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time datetime="2021">{{result[7]}}</time>
+                </div>
+
+                <div>
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT115M">{{result[4]}}</time>
+                </div>
+
+              </div>
+
+            </div>
+
+            <p class="storyline">
+              {{result[8]}}
+            </p>
+            <p class="storyline">
+              {{result[9]}}
+            </p>
+
+            <div class="details-actions">
+
+              <button class="share">
+                <ion-icon name="share-social"></ion-icon>
+
+                <span>Share</span>
+              </button>
+
+              <div class="title-wrapper">
+                <p class="title">Prime Video</p>
+
+                <p class="text">Streaming Channels</p>
+              </div>
+
+              <button class="btn btn-primary"  href="{{result[6]}}" onclick="openVideo()">
+                <ion-icon name="play"></ion-icon>
+
+                <span>Watch Now</span>
+              </button>
+              <script>
+                function openVideo() {
+                  window.location.href = "{{result[6]}}";
+                }
+              </script>
+
+            </div>
+
+            <a href="{{result[6]}}" download class="download-btn">
+              <span>Watch Now Trailer</span>
+
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TV SERIES
+      -->
+
+      <section class="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Best TV Series</p>
+
+          <h2 class="h2 section-title">World Best TV Series</h2>
+
+          <div class="container">
+            <div class="be-comment-block">
+              <h1 class="comments-title">Comments (3)</h1>
+              <form class="form-block" action="/prediction" method="POST">
+                <div class="row">
+
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <textarea class="form-input" name="usrcoment" required="" placeholder="Your text"></textarea>
+                      <input type="text" name="moviename" value="{{result[3]}}" hidden>
+                    </div>
+                  </div>
+                  <!-- <a class="btn btn-primary ">submit</a> -->
+                  <button type="submit" class="btn1 btn-success green"><i class="fa fa-share"></i> SEND</button>
+                </div>
+              </form>
+              {% for unames,reviewdata,sentimentop in flst %}
+              <div class="be-comment">
+                <div class="be-img-comment">
+                  <a href="#">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
+                  </a>
+                </div>
+                <div class="be-comment-content">
+                  <span class="be-comment-name">
+                    <a href="#">{{unames}}</a>
+                  </span>
+                  <span class="be-comment-time">
+                    <i class="fa fa-clock-o"></i>
+                    May 27, 2015 at 3:14am
+                  </span>
+                  <span class="be-comment-time">
+                    <jsuites-rating value="{{sentimentop}}" tooltip="Ugly, Bad, Average, Good, Outstanding"></jsuites-rating>
+
+                    <div id='console'></div>
+
+                  </span>
+                  <p class="be-comment-text">
+                    {{reviewdata}}
+                  </p>
+                </div>
+              </div>
+              {% endfor %}
+
+              <div class="be-comment">
+                <div class="be-img-comment">
+                  <a href="blog-detail-2.html">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
+                  </a>
+                </div>
+                <div class="be-comment-content">
+                  <span class="be-comment-name">
+                    <a href="#">Cüneyt ŞEN</a>
+                  </span>
+                  <span class="be-comment-time">
+                    <i class="fa fa-clock-o"></i>
+                    May 27, 2015 at 3:14am
+                  </span>
+                  <span class="be-comment-time">
+                    <jsuites-rating value="1" tooltip="Ugly, Bad, Average, Good, Outstanding"></jsuites-rating>
+
+                    <div id='console'></div>
+
+                  </span>
+                  <p class="be-comment-text">
+                    Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant
+                  </p>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="#" class="logo">
+            <img src="../static/images/logo.svg" alt="Filmlane logo">
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Movie</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">TV Show</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Web Series</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pricing</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+        </p>
+
+        <img src="../static/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+  <script>
+    document.querySelector('jsuites-rating').addEventListener('onchange', function (e) {
+      document.getElementById('console').innerHTML = 'New value: ' + this.value;
+    });
+  </script>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../static/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

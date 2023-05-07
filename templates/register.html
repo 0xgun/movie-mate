@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	    <title>Visual Admin - Login</title>
+        <meta name="description" content="">
+        <meta name="author" content="templatemo">
+      
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+	    <link href="{{url_for('static',filename='css1/font-awesome.min.css')}}" rel="stylesheet">
+	    <link href="{{url_for('static',filename='css1/bootstrap.min.css')}}" rel="stylesheet">
+	    <link href="{{url_for('static',filename='css1/templatemo-style.css')}}" rel="stylesheet">
+	    
+	   
+	</head>
+	<body class="light-gray-bg">
+		<div class="templatemo-content-widget templatemo-login-widget white-bg">
+			<header class="text-center">
+	        
+	          <h1>Please Register Here</h1>
+	        </header>
+	        <form action="/userregistration" method="POST" class="templatemo-login-form" enctype='multipart/form-data'>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
+		              	<input name="username" id="username" type="text" class="form-control" placeholder="Please Enter Username">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-envelope-o "></i></div>	        		
+		              	<input name="email" id="email" type="text" class="form-control" placeholder="Please Enter Email">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-phone "></i></div>	        		
+		              	<input name="mobno" id="mobno" type="text" class="form-control" placeholder="Please Enter mobile no">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-map-marker"></i></div>	        		
+		              	<input name="address" id="address" type="text" class="form-control" placeholder="Please Enter Address">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-key "></i></div>	        		
+		              	<input name="password" id="password" type="password" class="form-control" placeholder="Please Enter Password">           
+		          	</div>	
+	        	</div>	
+				<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-key "></i></div>	        		
+		              	<input type="file" id="myFile" name="filename" class="form-control" placeholder="Please Enter filename">           
+		          	</div>	
+	        	</div>	          	
+	          	          	
+	          	
+				<div class="form-group">
+					<button id="btnRegister" type="submit" class="templatemo-blue-button width-100">Register</button>
+				</div>
+	        </form>
+		</div>
+		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
+			<p>Allready User? <strong><a href="login" class="blue-text">Please Login Here!</a></strong></p>
+		</div>
+	</body>
+</html>
