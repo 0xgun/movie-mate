@@ -137,10 +137,12 @@ def prediction():
     global unames
     if request.method == "POST":
         global unames
-        details = request.form
-        usrcomment = details['usrcoment']
-        usrmoviename = details['moviename']
+        details = request.form.get
+        usrcomment = details('usrcoment')
+        usrmoviename = details('moviename')
         usrname = unames
+
+        print(usrcomment,usrmoviename)
 
         op = "prdicted_result"
 
@@ -163,7 +165,7 @@ def prediction():
         Y_test = testmodel.predict(X_test)
         Y_test = [np.argmax(val) for val in Y_test]
 
-        print()
+        print("Y_test")
         print(Y_test)
         print()
 
