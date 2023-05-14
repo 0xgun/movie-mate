@@ -32,3 +32,12 @@ The dataset contains 50,000 movie reviews from IMDB. The dataset is divided into
 ### Screen Shots
 
 ![Screenshot (1)](https://github.com/0xgun/movie-mate/blob/master/screenshots/UI_1.jpeg)
+
+![Screenshot (2)](https://github.com/0xgun/movie-mate/blob/master/screenshots/UI_2.jpeg )
+
+![Screenshot (3)](https://github.com/0xgun/movie-mate/blob/master/screenshots/UI_3.jpeg )
+
+![Screenshot (4)](https://github.com/0xgun/movie-mate/blob/master/screenshots/UI_4.jpeg )
+
+![Screenshot (5)](
+    https://github.com/0xgun/movie-mate/blob/master/screenshots/UI_5.jpeg )
