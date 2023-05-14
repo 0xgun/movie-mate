@@ -9,3 +9,26 @@
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
+## Introduction
+Sentiment analysis is a natural language processing technique used to determine whether data is positive, negative or neutral. Sentiment analysis is often performed on textual data to help businesses monitor brand and product sentiment in customer feedback, and understand customer needs.
+
+## Problem Statement
+The main objective of this project is to perform sentiment analysis on movie reviews and classify them as positive or negative. The dataset used for this project is the [IMDB Movie Reviews Dataset](https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) from Kaggle. The dataset contains 50,000 movie reviews from IMDB. The dataset is divided into 25,000 training samples and 25,000 testing samples. The training and testing samples are balanced, meaning that there are equal number of positive and negative reviews in both the training and testing samples. The dataset is already preprocessed and each review is encoded as a sequence of indexes corresponding to the words in the review. The words are indexed by their frequency in the dataset, meaning that for instance the integer "3" encodes the 3rd most frequent word in the data. This allows for quick filtering operations such as: "only consider the top 10,000 most common words, but eliminate the top 20 most common words".
+
+## Dataset
+
+### Data Description
+
+The dataset contains 50,000 movie reviews from IMDB. The dataset is divided into 25,000 training samples and 25,000 testing samples. The training and testing samples are balanced, meaning that there are equal number of positive and negative reviews in both the training and testing samples. The dataset is already preprocessed and each review is encoded as a sequence of indexes corresponding to the words in the review. The words are indexed by their frequency in the dataset, meaning that for instance the integer "3" encodes the 3rd most frequent word in the data. This allows for quick filtering operations such as: "only consider the top 10,000 most common words, but eliminate the top 20 most common words".
+
+### Data Dictionary
+
+| Column Name | Description |
+| --- | --- |
+| review | Textual review of the movie |
+| sentiment | Sentiment of the review (0 = negative, 1 = positive) |
+
+
+### Screen Shots
+
+![Screenshot (1)](https://github.com/0xgun/movie-mate/blob/master/screenshots/UI_1.jpeg)
